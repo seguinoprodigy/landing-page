@@ -1,0 +1,12 @@
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBarContainer .navBarHomePage {
+  list-style-type: none;
+}
+.navBarContainer .navBarLiContent {
+  margin: 0px 32px;
+  list-style-type: none;
+}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import NavBar from "./components/Navbar";
 
 const headerNavigation = [
   {
@@ -22,20 +23,8 @@ const headerNavigation = [
 function HomePage() {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/">Home Page</Link>
-          </li>
-          {headerNavigation.map((item) => {
-            return (
-              <li key={item.id}>
-                <Link href={item.href}>{item.name}</Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <NavBar />
+      <h1>Welcome to the Home Page</h1>
     </div>
   );
 }
